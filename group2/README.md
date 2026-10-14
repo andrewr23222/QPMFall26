@@ -6,6 +6,8 @@ The results are saved in group2_stock_betas.xlsx. The "Betas" tab has one row pe
 
 A few things to point out:
 
+- The CAD/USD series in the input file was wrong in the first version and has been replaced. Rerunning on the corrected file changes only NTR. Its currency beta goes from 0.86 to 2.03, and its AUD beta goes from 1.32 to 0.79. The other 42 stocks are unchanged.
+
 - The residuals subtract both alpha and beta at each step, matching how group0 computed the sector residuals.
 
 - The AUD beta passes the |t| > 2 test in 33 of 43 stocks, which is more often than we expected. Could be worth discussing as a group whether that is fine or the AUD step should be handled differently.
